@@ -60,7 +60,7 @@ module Chronic
       scan_for token, RepeaterDayName,
       {
         /^m[ou]n(day)?$/ => :monday,
-        /^t(ue|eu|oo|u)s?(day)?$/ => :tuesday,
+        /^t(ue|eu|u)s?(day)?$/ => :tuesday,
         /^we(d|dnes|nds|nns)(day)?$/ => :wednesday,
         /^th(u|ur|urs|ers)(day)?$/ => :thursday,
         /^fr[iy](day)?$/ => :friday,
@@ -104,11 +104,11 @@ module Chronic
         /^weekends?$/ => :weekend,
         /^(week|business)days?$/ => :weekday,
         /^days?$/ => :day,
-	      /^hrs?$/ => :hour,
+        /^hrs?$/ => :hour,
         /^hours?$/ => :hour,
-	      /^mins?$/ => :minute,
+        /^mins?$/ => :minute,
         /^minutes?$/ => :minute,
-	      /^secs?$/ => :second,
+        /^secs?$/ => :second,
         /^seconds?$/ => :second
       }.each do |item, symbol|
         if item =~ token.word
