@@ -152,7 +152,6 @@ module Chronic
       SpanDictionary.new(options).definitions
     end
 
-    private
 
     def tokenize(text, options)
       text = pre_normalize(text)
